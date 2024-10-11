@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>CAY LẮM RỒIIIII 🥲🥲🥲</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>BẠN CÓ ĐAU KHỔ NHƯ TÔI KHÔNG 🫠?</div>
+        <!-- bài toán tính tổng 2 số nguyên do người dùng nhập vào -->
+        <form action="J2Servlet"  method="get">
+            Họ và tên của bạn là:<input type ="text" name="hoten"><br> <!--comment-->
+
+            Nhập số thứ nhất:<input type="text" name="sothunhat"><br><!--comment-->
+
+            Nhập số thứ hai:<input type="text" name="sothuhai"><br><!--comment-->
+            Chọn tác vụ:
+            <select name ="tacvu">
+                <option value="TinhTong">Tính Tổng</option>
+                <option value="TinhHieu">Tính Hiệu</option>
+                <option value="TinhTich">Tính Tích</option>
+                <option value="TinhThuong">Tính Thương</option>
+            </select><br>
+            <input type="submit" value="Thực hiện">
+        </form>
+        <!-- -trước khi người dùng nhập 2 số nguyên, yêu cầu nhập họ và tên 
+        -Ở Servlet (trang xử lí dữ liệu) -> in ra màn hình: 
+        chào ....tác vụ bạn chọn là... tổng là: 
+         tạo menu chọn tác vụ sau khi nhập 2 số nguyên
+         1. tính tổng
+         2. tính hiệu
+         3. tính tích
+         4. tính thương
+         -tạo thêm thẻ input để người dùng chọn tác vụ muốn thực hiện-->
+
+        <!--RoadMap Backend Java
+        -HTML: thuộc về giao diện người dùng -> form và table
+        Servlet: là 1 thành phần phía server dùng để xử lý các yêu cầu liên quan từ client, tạo ra phản hồi và gửi lại phản hồi cho client
+        -JSP: sử dụng để thay thế cho html -> cho phép viết cả code java và code html trên cùng 1 file 
+        -JSTL: cho phép tương tác giữa Servlet(thông tin lấy về từ database) với JSP dễ dàng hơn 
+        -JDBC: cho phép kết nối với database 
+        -Máy chủ ứng dụng: Tomcat
+        Client: máy khách
+        Server: máy chủ (tomcat)
+        Client sẽ gửi request cho server 
+        Server sẽ gửi lại response cho client 
+        Chu trình hoạt động của servlet :
+        -Client gửi request HTTP lên server 
+        Server nhận request đó và đẩy nó sang Servlet
+        -Servlet sẽ xử lý request: xử lý các tham số trong request, logic, tương tác với cơ sở dữ liệu,...
+        -Servlet sẽ gửi response cho Client 
+        
+        
+        -Internet: là hệ thống toàn cầu để kết nối với nhau, sử dụng bộ giao thức để chia sẻ và liên lạc thông tin 
+        -IP: nhận diện riêng của những kết nối
+        -Domain: là network của các máy tính và thiết bị được quản lý bởi 1 công ty cụ thể
+        -DNS: sẽ dịch tên miền thành địa chỉ IP, sau đó máy chủ DNS sẽ kết nối người dùng với trang web
+        -Hosting: cung cấp chỗ ở và bảo trì 
+        -GUI (giao diện người dùng): hiển thị đối tượng truyền tải thông tin đến với người dùng cũng như biểu thị các hành động mà người dùng có thể thực hiện 
+        -->
+
+    </body>   
+</html>
